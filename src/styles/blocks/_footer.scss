@@ -1,0 +1,132 @@
+.footer {
+  background-color: #212a2f;
+  color: #fff;
+
+  &__body {
+    padding-bottom: 90px;
+    padding-left: 70px;
+
+    @include mobile {
+      padding-left: 30px;
+      padding-bottom: 45px;
+    }
+  }
+
+  &__help-title,
+  &__shop-title,
+  &__company-title {
+    margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__columns {
+    display: flex;
+
+    @include mobile-s {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  }
+
+  &__help,
+  &__shop,
+  &__company {
+    width: 100%;
+    max-width: 333px;
+  }
+
+  &__help-link,
+  &__shop-link,
+  &__company-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+
+    @include mobile {
+      font-size: 10px;
+    }
+
+    &:hover {
+      color: aqua;
+    }
+  }
+
+  &__help-list,
+  &__shop-list,
+  &__company-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include mobile {
+      gap: 10px;
+    }
+  }
+
+  &__help-item,
+  &__shop-item,
+  &__company-item {
+    line-height: 12px;
+  }
+
+  &__columns {
+    padding-block: 72px;
+  }
+
+  &__follow {
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+
+    &-info {
+      max-width: 333px;
+      width: 100%;
+    }
+
+    &-title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      margin-top: 21px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.5px;
+    }
+
+    &-media {
+      display: flex;
+      align-items: start;
+      gap: 24px;
+      margin-right: 141px;
+
+      @include mobile {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
+}

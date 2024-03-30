@@ -1,0 +1,68 @@
+.shopping {
+  padding-top: 34px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 24px;
+
+  @include desktop {
+    margin-top: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(227 227 227 / 50%);
+    border: 1px solid;
+
+    &__item-image {
+      height: auto;
+    }
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      position: relative;
+    }
+
+    &-class {
+      align-items: center;
+      margin-top: 11px;
+      column-gap: 12px;
+      display: flex;
+    }
+
+    &-title {
+      padding-bottom: 10px;
+    }
+
+    &-text-wrapper {
+      width: 336px;
+      margin-block: 18px;
+    }
+
+    &-weather-text {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &__buttons {
+    row-gap: 12px;
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    top: 45%;
+
+    @include desktop {
+      top: 30%;
+    }
+  }
+
+  &__button {
+    @include button-secondary;
+
+    width: 276px;
+  }
+}

@@ -1,0 +1,30 @@
+$color-dark: #212a2f;
+$color-light: #ffffff;
+$color-gray: #74797c;
+$color-gray-alt: #f5f5f5;
+
+$border: 1px solid #d3d4d5;
+$border-high: 2px solid #d3d4d5;
+$border-radius: 2px;
+
+$shadow: 0px 0px 28px 0px #000000;
+
+$font-family-base: "Roboto", sans-serif;
+
+$container-width: 1380px;
+$container-padding-x: 20px;
+
+$section-padding-y: 60px;
+
+$input-height: 48px;
+$button-height: 48px;
+
+$transition-duration: 0.2s;
+
+// @include desktop {
+//   -ms-perspective-origin-y: 50px;
+// }
+
+// @include mobile {
+//   -ms-perspective-origin-y: 30px;
+// }
